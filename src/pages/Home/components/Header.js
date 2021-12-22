@@ -7,15 +7,21 @@ import Toolbar from '@material-ui/core/Toolbar';
 
 const useStyles = makeStyles({
   appBar: {
-    baxShadow: 'none'
+    boxShadow: 'none'
+  },
+  img: {
+    maxHeight: 110,
   }
 
 })
 
 function Header() {
+  const classes = useStyles();
   return (
-    <AppBar position='fixed' color='inherit'>
+    <AppBar position='fixed' color='inherit' className={classes.appBar}>
       <Toolbar>
+        <img src="/images/logonovagas.png" alt="logonovagas" className={classes.img} />
+
         {/* <div>
           <a href="/">NovaGas Conect</a >
 
