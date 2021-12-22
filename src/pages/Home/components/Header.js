@@ -29,7 +29,7 @@ const useStyles = makeStyles({
   },
   bell: {
     marginRight: 10,
-    flexGrow: 1
+
   }
 
 })
