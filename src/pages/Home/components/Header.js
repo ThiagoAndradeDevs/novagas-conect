@@ -10,7 +10,7 @@ const useStyles = makeStyles({
     boxShadow: 'none'
   },
   img: {
-    maxHeight: 110,
+    maxHeight: 150,
   }
 
 })
@@ -21,6 +21,9 @@ function Header() {
     <AppBar position='fixed' color='inherit' className={classes.appBar}>
       <Toolbar>
         <img src="/images/logonovagas.png" alt="logonovagas" className={classes.img} />
+        <div>
+          <Button variant="contained" color='primary'>Novo Pedido</Button>
+        </div>
 
         {/* <div>
           <a href="/">NovaGas Conect</a >
