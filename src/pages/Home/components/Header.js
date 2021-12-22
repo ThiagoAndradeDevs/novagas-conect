@@ -7,13 +7,29 @@ import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
 import SvgIcon from '@material-ui/core/SvgIcon';
 import { Bell } from 'react-feather';
+import Avatar from '@material-ui/core/Avatar'
 
 const useStyles = makeStyles({
   appBar: {
     boxShadow: 'none'
   },
   img: {
-    maxHeight: 150,
+    maxHeight: 120,
+  },
+  grow: {
+    flexGrow: 1
+  },
+  userSection: {
+    display: 'flex',
+    alignItems: 'center'
+  },
+  button: {
+    paddingRight: 10,
+
+  },
+  bell: {
+    marginRight: 10,
+    flexGrow: 1
   }
 
 })
@@ -24,13 +40,16 @@ function Header() {
     <AppBar position='fixed' color='inherit' className={classes.appBar}>
       <Toolbar>
         <img src="/images/logonovagas.png" alt="logonovagas" className={classes.img} />
+        <div className={classes.grow}></div>
+        <div className={classes.userSection}></div>
         <div>
-          <Button variant="contained" color='primary'>
+          <Button variant="contained" color='primary' className={classes.button}>
             Novo Pedido
           </Button>
-          <SvgIcon>
+          <SvgIcon className={classes.bell}>
             <Bell></Bell>
           </SvgIcon>
+
         </div>
 
         {/* <div>
