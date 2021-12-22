@@ -1,4 +1,7 @@
 import react from 'react';
+import { Button } from '@material-ui/core';
+//import '../style.css';
+
 
 function Header() {
   return (
@@ -8,7 +11,7 @@ function Header() {
           <span>NovaGas Conect</span>
         </div>
         <div className=''>
-          <button>Novo Pedido</button>
+          <Button variant="contained" color='success'>Novo Pedido</Button>
           <span>img1</span>
           <span>img2</span>
         </div>
