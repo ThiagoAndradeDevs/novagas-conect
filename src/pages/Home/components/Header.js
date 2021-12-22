@@ -1,22 +1,33 @@
 import react from 'react';
 import { Button } from '@material-ui/core';
 //import '../style.css';
+import { makeStyles } from '@material-ui/core/styles';
+import AppBar from '@material-ui/core/AppBar';
+import Toolbar from '@material-ui/core/Toolbar';
 
+const useStyles = makeStyles({
+  appBar: {
+    baxShadow: 'none'
+  }
+
+})
 
 function Header() {
   return (
-    <header className='header'>
-      <div className='toolbar'>
-        <div>
-          <span>NovaGas Conect</span>
+    <AppBar position='fixed' color='inherit'>
+      <Toolbar>
+        {/* <div>
+          <a href="/">NovaGas Conect</a >
+
         </div>
         <div className=''>
-          <Button variant="contained" color='success'>Novo Pedido</Button>
+          <Button variant="contained" color='primary'>Novo Pedido</Button>
+          <input type='text' />
           <span>img1</span>
           <span>img2</span>
-        </div>
-      </div>
-    </header>
+       </div>*/}
+      </Toolbar>
+    </AppBar>
   )
 }
 export default Header;
