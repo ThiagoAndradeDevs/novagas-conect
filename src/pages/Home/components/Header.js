@@ -1,9 +1,12 @@
-import react from 'react';
+/* eslint-disable react/jsx-no-undef */
+import React from 'react';
 import { Button } from '@material-ui/core';
 //import '../style.css';
 import { makeStyles } from '@material-ui/core/styles';
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
+import SvgIcon from '@material-ui/core/SvgIcon';
+import { Bell } from 'react-feather';
 
 const useStyles = makeStyles({
   appBar: {
@@ -22,7 +25,12 @@ function Header() {
       <Toolbar>
         <img src="/images/logonovagas.png" alt="logonovagas" className={classes.img} />
         <div>
-          <Button variant="contained" color='primary'>Novo Pedido</Button>
+          <Button variant="contained" color='primary'>
+            Novo Pedido
+          </Button>
+          <SvgIcon>
+            <Bell></Bell>
+          </SvgIcon>
         </div>
 
         {/* <div>
