@@ -14,9 +14,7 @@ const useStyles = makeStyles({
   },
   main: {
     height: '100vh',
-    display: 'flex',
-    width: '1280px',
-    margin: '0 auto'
+    padding: 24
   },
   toolbar: {
     minHeight: '64px'
@@ -32,19 +30,10 @@ function Home() {
       <div className={classes.toolbar}></div>
       <main className={classes.main}>
         <Container maxWidth='lg'>
-          <Box component='span'>
-            <NavBar />
-            <Feed />
+          <Box>
+            <NavBar /> <Feed />
           </Box>
         </Container>
-        <Container>
-          <div>
-            <NavBar />
-            <Feed />
-          </div>
-        </Container>
-
-
       </main>
     </div>
   )
