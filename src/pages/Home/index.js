@@ -31,7 +31,8 @@ function Home() {
       <main className={classes.main}>
         <Container maxWidth='lg'>
           <Box>
-            <NavBar /> <Feed />
+            <NavBar />
+            <Feed />
           </Box>
         </Container>
       </main>
