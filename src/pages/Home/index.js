@@ -20,7 +20,8 @@ const useStyles = makeStyles({
   },
   toolbar: {
     minHeight: '64px'
-  }
+  },
+
 })
 
 function Home() {
@@ -31,15 +32,17 @@ function Home() {
       <div className={classes.toolbar}></div>
       <main className={classes.main}>
         <Container maxWidth='lg'>
-          <Box>
+          <Box component='span'>
             <NavBar />
             <Feed />
           </Box>
         </Container>
-        <div>
-          <NavBar />
-          <Feed />
-        </div>
+        <Container>
+          <div>
+            <NavBar />
+            <Feed />
+          </div>
+        </Container>
 
 
       </main>
