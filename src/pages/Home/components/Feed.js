@@ -18,8 +18,10 @@ const posts = [
 ]
 
 function Feed() {
+  const classes = useStyles();
+
   return (
-    <div>
+    <div className={classes.root}>
       {
         posts.map(post => (
           <PostCard key={post.id} post={post} />
