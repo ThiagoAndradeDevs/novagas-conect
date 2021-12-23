@@ -15,6 +15,9 @@ const useStyles = makeStyles({
     display: 'flex',
     width: '1280px',
     margin: '0 auto'
+  },
+  toolbar: {
+    minHeight: '64px'
   }
 })
 
@@ -23,7 +26,7 @@ function Home() {
   return (
     <div className={classes.root}>
       <Header />
-      <div className='toolbar'></div>
+      <div className={classes.toolbar}></div>
       <main className={classes.main}>
         <NavBar />
         <Feed />
