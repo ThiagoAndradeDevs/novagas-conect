@@ -13,7 +13,8 @@ const posts = [
   { id: 2, description: ' Seja Vip ' },
   { id: 3, description: ' Deposito 24 Horas ' },
   { id: 4, description: ' Entregas de segunda a sabado 7 hs às 19 : 30 Horas ' },
-  { id: 5, description: ' Domingos e Feriados até às 13 : 30 Horas  ' }
+  { id: 5, description: ' Domingos e Feriados até às 13 : 30 Horas  ' },
+  { id: 6, description: ' Av. Duarte da Costa n: 190, Marilia-SP   ' }
 
 ]
 
