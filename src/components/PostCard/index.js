@@ -7,6 +7,7 @@ import CardHeader from '@material-ui/core/CardHeader';
 import CardContent from '@material-ui/core/CardContent';
 import CardActions from '@material-ui/core/CardActions';
 import Typography from '@material-ui/core/Typography';
+import Avatar from '@material-ui/core/Avatar';
 
 
 
@@ -16,16 +17,27 @@ const useStyles = makeStyles((theme) => {
   root: {
     marginBotton: theme.spacing(2)
   }
+
+
+
+
 })
 
 
 function PostCard({ post }) {
   const classes = useStyles();
 
+
   return (
 
     <Card className={classes.root}>
-      <CardHeader>
+      <CardHeader
+
+        title={<Typography variant="h4">{post.title}</Typography>} subheader={
+          <Typography variant='caption' title={PostCard}>{'Nova Gas Conect'}</Typography>}
+
+
+      >
 
       </CardHeader>
       <CardContent>
