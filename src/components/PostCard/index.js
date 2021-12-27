@@ -24,7 +24,7 @@ function PostCard({ post }) {
 
   return (
 
-    <Card classes={classes.root}>
+    <Card className={classes.root}>
       <CardHeader>
 
       </CardHeader>
