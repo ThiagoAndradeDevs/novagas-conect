@@ -21,7 +21,18 @@ function PostCard({ post }) {
   const classes = useStyles();
 
   return (
-    <h1>{post.description}</h1>
+
+    <Card classes={classes.root}>
+      <CardHeader>
+
+      </CardHeader>
+      <CardContent>
+
+      </CardContent>
+      <CardActions>
+
+      </CardActions>
+    </Card>
   )
 };
 export default PostCard;
