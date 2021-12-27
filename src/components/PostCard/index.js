@@ -34,7 +34,7 @@ function PostCard({ post }) {
       <CardHeader
 
         title={<Typography variant="h4">{post.title}</Typography>} subheader={
-          <Typography variant='caption' title={PostCard}>{'Nova Gas Conect'}</Typography>}
+          <Typography variant='caption' title={post.id}>{'Nova Gas Conect'}</Typography>}
 
 
       >
