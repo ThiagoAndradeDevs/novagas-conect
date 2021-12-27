@@ -1,3 +1,5 @@
+/* eslint-disable no-labels */
+/* eslint-disable no-unused-labels */
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import Card from '@material-ui/core/Card';
@@ -11,8 +13,8 @@ import Typography from '@material-ui/core/Typography';
 
 
 const useStyles = makeStyles((theme) => {
-  {
-
+  root: {
+    marginBotton: theme.spacing(2)
   }
 })
 
