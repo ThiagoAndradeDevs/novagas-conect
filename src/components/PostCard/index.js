@@ -20,18 +20,17 @@ const useStyles = makeStyles((theme) => ({
 function PostCard({ post }) {
   const classes = useStyles();
   return (
-    <div><h1>{post.description}</h1>
-      <Card className={classes.root}>
+
+    <Card className={classes.root}>
+      <div><h1>{post.description}</h1>
 
 
 
 
 
+      </div>
+    </Card>
 
-
-
-      </Card>
-    </div>
   )
 }
 
