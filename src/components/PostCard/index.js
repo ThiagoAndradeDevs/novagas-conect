@@ -30,10 +30,10 @@ function PostCard({ post }) {
 
         />
         <CardContent>
-
+          Especialista em qualidade!!!
         </CardContent>
         <CardActions>
-
+          Compre e comprove
         </CardActions>
       </div>
     </Card>
