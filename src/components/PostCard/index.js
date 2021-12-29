@@ -9,14 +9,28 @@ import CardActions from '@material-ui/core/CardActions';
 import Typography from '@material-ui/core/Typography';
 import Avatar from '@material-ui/core/Avatar';
 
+const useStyles = makeStyles((theme) => ({
+  root: {
 
+  }
+}))
 
 
 
 function PostCard({ post }) {
+  const classes = useStyles();
   return (
-    <div>
-      <h1>{post.description}</h1>
+    <div><h1>{post.description}</h1>
+      <Card className={classes.root}>
+
+
+
+
+
+
+
+
+      </Card>
     </div>
   )
 }
