@@ -13,40 +13,12 @@ import Avatar from '@material-ui/core/Avatar';
 
 
 
-const useStyles = makeStyles((theme) => {
-  root: {
-    marginBotton: theme.spacing(2)
-  }
-
-
-
-
-})
-
-
 function PostCard({ post }) {
-  const classes = useStyles();
-
-
   return (
-
-    <Card className={classes.root}>
-      <CardHeader
-
-        title={<Typography variant="h4">{post.title}</Typography>} subheader={
-          <Typography variant='caption' title={post.id}>{'Nova Gas Conect'}</Typography>}
-
-
-      >
-
-      </CardHeader>
-      <CardContent>
-
-      </CardContent>
-      <CardActions>
-
-      </CardActions>
-    </Card>
+    <div>
+      <h1>{post.description}</h1>
+    </div>
   )
-};
+}
+
 export default PostCard;
